@@ -15,3 +15,7 @@ Must be compiled
 Install node.js (https://nodejs.org/en)
 
 npm - node package manager
+
+tsc - typescript compiler
+
+npm i -g typescript
