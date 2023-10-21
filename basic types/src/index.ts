@@ -113,4 +113,39 @@ class Users {
 
 const spiffuser = new Users("s@s.com", "spiff")
 
+
+//  Classes can be used to implement interfaces. For example
+
+interface TakePhoto {
+    cameraMode : string
+    filter : string
+    burst : number
+}
+
+interface Story {
+    createStory() : void
+}
+
+class Instagram implements TakePhoto{
+    constructor(
+        public cameraMode : string,
+        public filter : string,
+        public burst : number
+    ) {}
+}
+
+class Youtube implements TakePhoto{
+    constructor(
+        public cameraMode : string,
+        public filter : string,
+        public burst : number,
+        public short : string
+    ) {}
+
+    createStory(): void {
+        console.log("story created")
+    }
+}
+
+// Abstract classes are used as blueprints for creating other classes. They have to be extended to be used
 export{}
