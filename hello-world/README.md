@@ -25,3 +25,7 @@ Adding a ? after a defined variable in an array or object makes it an optional v
 
 
 retire?
+
+Objects, a function can return an object
+
+Issue with tuples - the values can be overwritten and can be appended to

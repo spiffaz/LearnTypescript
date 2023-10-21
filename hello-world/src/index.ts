@@ -67,7 +67,17 @@ let superheros : string[]
 
 let superheroes : (string | number) []= [1, "2"]
 
-superheroes.push(3)
+
+superheroes.push(3);
+
+// Tuple
+
+type Super = [number, string];
+
+let Super = [12, "eleven"];
+
+
+
 
 
 export{}
