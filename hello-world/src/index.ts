@@ -36,3 +36,38 @@ loginUser("h")
 function returnError (errmsg: string) : never {
     throw new Error(errmsg);
 }
+
+// Objects
+
+const User = {
+     name: "Spiff",
+     email: "spiff@spiff.com",
+     isActive : true 
+}
+
+function createCourse():{name: string, price: number}{
+    return {name: "Angular", price: 200}
+}
+
+type User = {
+    name : string;
+    email : string;
+    isActive : boolean
+}
+
+function createUser (user: User) {
+
+}
+
+createUser ({name: "", email: "", isActive: true})
+
+let superhero : [] 
+
+let superheros : string[]
+
+let superheroes : (string | number) []= [1, "2"]
+
+superheroes.push(3)
+
+
+export{}
