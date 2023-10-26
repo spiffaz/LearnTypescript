@@ -9,8 +9,8 @@ var dayOfTheWeek;
     dayOfTheWeek[dayOfTheWeek["Friday"] = 6] = "Friday";
     dayOfTheWeek[dayOfTheWeek["Saturday"] = 7] = "Saturday";
 })(dayOfTheWeek || (dayOfTheWeek = {}));
-function evaluateDayOfTheWeek(dayOfTheWeek) {
-    switch (dayOfTheWeek) {
+function evaluateDayOfTheWeek(day) {
+    switch (day) {
         case 2:
             return "Weekday";
         case 3:
@@ -23,7 +23,7 @@ function evaluateDayOfTheWeek(dayOfTheWeek) {
             return "Weekday";
         case 1:
             return "Weekend";
-        case 7:
+        case dayOfTheWeek.Sunday:
             return "Weekend";
         default:
             return "Invalid option";
