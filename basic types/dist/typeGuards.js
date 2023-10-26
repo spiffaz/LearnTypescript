@@ -1,9 +1,9 @@
 "use strict";
 function anyParameter(parameter) {
-    if (typeof (parameter) == "number") {
+    if (typeof (parameter) === "number") {
         return parameter * 2;
     }
-    else if (typeof (parameter) == "string") {
+    else if (typeof (parameter) === "string") {
         return ("Hello " + parameter);
     }
     else {
